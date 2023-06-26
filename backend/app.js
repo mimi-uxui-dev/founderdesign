@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 4242;
+const port = 4000;
 
 // middlewares
 app.use(express.json());
