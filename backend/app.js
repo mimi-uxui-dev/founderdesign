@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
-// const YOUR_DOMAIN = `http://localhost:${port}`;
+const YOUR_DOMAIN = `http://localhost:${port}`;
 
 app.post(`/checkout`, async (req, res) => {
   const item = req.body.item;
@@ -30,10 +30,10 @@ app.post(`/checkout`, async (req, res) => {
       },
     ],
     mode: "subscription",
-    // success_url: `${YOUR_DOMAIN}/success`,
-    // cancel_url: `${YOUR_DOMAIN}/canceled`,
-    success_url: "http://founderdesign.io/success",
-    cancel_url: "http://founderdesign.io/canceled",
+    success_url: `${YOUR_DOMAIN}/success`,
+    cancel_url: `${YOUR_DOMAIN}/canceled`,
+   // success_url: "http://founderdesign.com/success",
+    // cancel_url: "http://founderdesign.com/canceled",
   });
 
   res.json({ url: session.url });
