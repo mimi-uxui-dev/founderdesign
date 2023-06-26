@@ -16,7 +16,8 @@ app.use(express.static("public"));
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
-const YOUR_DOMAIN = `http://localhost:${port}`;
+// const YOUR_DOMAIN = `http://localhost:${port}`;
+const YOUR_DOMAIN = `https://founderdesign.io`;
 
 app.post(`/checkout`, async (req, res) => {
   const item = req.body.item;
