@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 4000;
+const port = 5000;
 
 // middlewares
 app.use(express.json());
@@ -33,16 +33,11 @@ app.post(`/checkout`, async (req, res) => {
     mode: "subscription",
     success_url: `${YOUR_DOMAIN}/success`,
     cancel_url: `${YOUR_DOMAIN}/canceled`,
-   // success_url: "http://founderdesign.com/success",
+    // success_url: "http://founderdesign.com/success",
     // cancel_url: "http://founderdesign.com/canceled",
   });
 
   res.json({ url: session.url });
 });
 
-app.listen(port, () =>
-  console.log(
-    "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥 Server start at port ",
-    port
-  )
-);
+app.listen(port, () => console.log("🔥 Server start at port ", port));
