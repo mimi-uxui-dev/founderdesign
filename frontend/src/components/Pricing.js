@@ -55,7 +55,7 @@ function Pricing() {
     //e.preventDefault();
     setPending(true);
 
-    console.log(priceID);
+    // console.log(priceID);
     const res = await fetch("/checkout", {
       method: "POST",
       headers: {
@@ -69,7 +69,7 @@ function Pricing() {
       }),
     });
 
-    console.log("res", res);
+    // console.log("res", res);
 
     const body = await res.json();
     setPending(false);
