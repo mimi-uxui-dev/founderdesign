@@ -6,11 +6,11 @@ const port = 5000;
 
 // middlewares
 app.use(express.json());
-app.use(
-  cors({
-    origin: ["https://checkout.stripe.com"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: ["https://checkout.stripe.com"],
+//   })
+// );
 
 app.use(express.static("public"));
 
