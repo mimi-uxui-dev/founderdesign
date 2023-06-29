@@ -7,17 +7,17 @@ const port = 5000;
 
 // middlewares
 app.use(express.json());
-app.use(
-  cors({
-    origin: [
-      "https://checkout.stripe.com",
-      "https://founderdesign.io",
-      "http://founderdesign.io",
-      "https://founderdesign.io/",
-      "http://founderdesign.io/",
-    ],
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "https://checkout.stripe.com",
+//       "https://founderdesign.io",
+//       "http://founderdesign.io",
+//       "https://founderdesign.io/",
+//       "http://founderdesign.io/",
+//     ],
+//   })
+// );
 
 app.use(express.static("public"));
 
