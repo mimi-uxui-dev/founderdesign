@@ -72,7 +72,7 @@ function Pricing() {
       }),
     });
 
-    console.log("res", res);
+    // console.log("res", res);
 
     const body = await res.json();
     setPending(false);
