@@ -1,4 +1,5 @@
 require("dotenv").config();
+const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -8,20 +9,24 @@ const port = 5000;
 app.use(express.json());
 // app.use(
 //   cors({
-//     origin: ["https://checkout.stripe.com"],
+//     origin: [
+//       "https://checkout.stripe.com",
+//       "https://founderdesign.io",
+//       "http://localhost:5000",
+//       "http://localhost:3000",
+//     ],
 //   })
 // );
+app.use(cors());
 
 app.use(express.static("public"));
-
-const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 // const YOUR_DOMAIN = `http://localhost:${port}`;
 const YOUR_DOMAIN = `https://founderdesign.io`;
 
 app.post(`/checkout`, async (req, res) => {
   const item = req.body.item;
-  console.log("⚡⚡⚡ Item => ", item.price);
+  // console.log("⚡⚡⚡ Item => ", item.price);
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     line_items: [
@@ -38,6 +43,7 @@ app.post(`/checkout`, async (req, res) => {
   });
 
   res.json({ url: session.url });
+  res.redirect(303, session.url);
 });
 
 app.listen(port, () => console.log("🔥 Server start at port ", port));

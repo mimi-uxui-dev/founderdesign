@@ -59,7 +59,10 @@ function Pricing() {
     const res = await fetch("/checkout", {
       method: "POST",
       headers: {
+        Accept: "application/json",
+        "Access-Control-Allow-Methods": "POST",
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
         item: {
@@ -69,7 +72,7 @@ function Pricing() {
       }),
     });
 
-    // console.log("res", res);
+    console.log("res", res);
 
     const body = await res.json();
     setPending(false);
@@ -90,7 +93,12 @@ function Pricing() {
       </div>
       <div className="pricing-grid mt120">
         {data.map((d) => (
-          <div key={d.id} className="pricing-card">
+          <from
+            method="POST"
+            action="/checkout"
+            key={d.id}
+            className="pricing-card"
+          >
             <div>
               <h6>{d.type}</h6>
               <h2>{d.price}</h2>
@@ -101,11 +109,16 @@ function Pricing() {
                 ))}
               </ul>
             </div>
-            <button className="button" onClick={() => checkout(d.priceId)}>
+            <button
+              className="button"
+              type="submit"
+              onClick={() => checkout(d.priceId)}
+            >
               {d.linkText} {pending}
             </button>
-          </div>
+          </from>
         ))}
+
         {data2.map((d) => (
           <div key={d.id} className="pricing-card">
             <div>
