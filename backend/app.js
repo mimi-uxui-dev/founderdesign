@@ -19,8 +19,6 @@ app.use(
   })
 );
 
-app.use(cors());
-
 app.use(express.static("public"));
 
 // const YOUR_DOMAIN = `http://localhost:${port}`;
