@@ -26,7 +26,7 @@ function Header() {
           href="https://calendly.com/founderdesign/15min"
           rel="noreferrer"
         >
-          Get in touch x
+          Get in touch
         </a>
       </div>
     </header>
