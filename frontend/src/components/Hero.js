@@ -6,7 +6,7 @@ function Hero() {
     <article className="hero mbhero">
       <div className="container">
         <div className="hero-content">
-          <h1 className="h1">Design as a Subscription - Simple as that! xx</h1>
+          <h1 className="h1">Design as a Subscription - Simple as that!</h1>
           <p className="body">
             An outstanding design is crucial for you to win longterm! With over
             12 years experiences in design, entrepreneurship and business
