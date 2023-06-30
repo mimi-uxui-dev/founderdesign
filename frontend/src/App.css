@@ -659,7 +659,7 @@ footer > div > a:hover {
   .menu {
     display: flex;
     height: 44px;
-    width: 44px;
+    width: 44px !important;
   }
 
   .displayFlex {
@@ -698,7 +698,7 @@ footer > div > a:hover {
     color: var(--2);
   }
   .header {
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 }
