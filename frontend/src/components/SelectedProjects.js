@@ -11,7 +11,14 @@ function SelectedProjects() {
       id: 1,
       img: img1,
       title: "FounderStudio",
-      content: "VideoPitch App to grow and fundraise with the crowd",
+      content:
+        "Landing page VideoPitch App to grow and fundraise with the crowd",
+    },
+    {
+      id: 3,
+      img: img4,
+      title: "FounderStudio App",
+      content: "VideoPitch App to grow and fundraise with the crowd.",
     },
     {
       id: 2,
