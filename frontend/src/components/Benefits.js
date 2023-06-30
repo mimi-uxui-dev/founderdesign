@@ -52,7 +52,7 @@ function Benefits() {
   ];
 
   return (
-    <article className="darkbg pb pt ">
+    <article id="whatweoffer" className="darkbg pb pt ">
       <div className="container">
         <div className="container-header">
           <div className="abc">

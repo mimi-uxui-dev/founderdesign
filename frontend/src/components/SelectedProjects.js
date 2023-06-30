@@ -37,7 +37,7 @@ function SelectedProjects() {
   ];
 
   return (
-    <article className="container mt200 mb200">
+    <article id="ourwork" className="container mt200 mb200">
       <div className="container-header">
         <div className="abc">
           <p className="body20">Our Work</p>

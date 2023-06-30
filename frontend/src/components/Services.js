@@ -55,7 +55,7 @@ function Services() {
   ];
 
   return (
-    <article className="container mt200 mb200">
+    <article id="services" className="container mt200 mb200">
       <div className="container-header">
         <div className="abc">
           <p className="body20">SERVICES</p>
