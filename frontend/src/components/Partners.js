@@ -1,5 +1,5 @@
 import React from "react";
-import smallline from "../assets/small-line-white.svg";
+import smallline from "../assets/small-line.svg";
 import img1 from "../assets/partners/p1.svg";
 import img2 from "../assets/partners/p2.svg";
 import img3 from "../assets/partners/p3.svg";
