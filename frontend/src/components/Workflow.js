@@ -24,7 +24,7 @@ function Workflow() {
   ];
 
   return (
-    <article id="workflow" className="container mb200 workflow">
+    <article id="workflow" className="container mb200 mt120 workflow">
       <div className="container-header">
         <div className="abc">
           <p className="body20">Workflow</p>

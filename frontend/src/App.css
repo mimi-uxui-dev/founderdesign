@@ -87,11 +87,8 @@ header {
 .hero {
   background: url("./assets/hero-bg.svg");
   border: 1px solid transparent;
-  position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .button {
@@ -478,9 +475,7 @@ footer > div > a:hover {
 }
 
 .video {
-  clip-path: url("#mask");
   width: 100%;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
@@ -503,15 +498,12 @@ footer > div > a:hover {
 }
 
 @media only screen and (max-width: 1320px) {
-  .video-container {
-    display: none;
-  }
   .mbhero {
     margin-bottom: 80px;
   }
-  .hero {
+  /* .hero {
     height: 60vh;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1280px) {
