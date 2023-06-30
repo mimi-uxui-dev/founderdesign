@@ -56,7 +56,7 @@ function Pricing() {
     setPending(true);
 
     // console.log(priceID);
-    const res = await fetch("/checkout", {
+    const res = await fetch("/api/checkout", {
       method: "POST",
       headers: {
         Accept: "application/json",

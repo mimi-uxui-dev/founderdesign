@@ -24,7 +24,7 @@ app.use(express.static("public"));
 // const YOUR_DOMAIN = `http://localhost:${port}`;
 const YOUR_DOMAIN = `https://founderdesign.io`;
 
-app.post(`/checkout`, async (req, res) => {
+app.post(`/api/checkout`, async (req, res) => {
   const item = req.body.item;
   // console.log("⚡⚡⚡ Item => ", item.price);
   const session = await stripe.checkout.sessions.create({
