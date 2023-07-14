@@ -452,10 +452,41 @@ footer {
   align-items: center;
   padding: 64px 48px;
   background-image: url("./assets/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  flex-direction: column;
+  gap: 40px;
 }
 
 footer * {
   color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-top p {
+  line-height: 1.7;
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-bottom a:hover {
+  color: var(--3);
+  transition: all ease 0.3s;
 }
 
 footer h6 {
@@ -620,6 +651,13 @@ footer > div > a:hover {
   .project-card img {
     max-width: unset;
   }
+
+  .footer-bottom,
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -639,6 +677,10 @@ footer > div > a:hover {
 
   .hero {
     height: fit-content;
+  }
+
+  .footer-bottom > div {
+    flex-direction: column;
   }
 }
 
