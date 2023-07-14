@@ -558,6 +558,9 @@ footer > div > a:hover {
   /* .hero {
     height: 60vh;
   } */
+  article.policies > .container {
+    padding-top: 240px;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
