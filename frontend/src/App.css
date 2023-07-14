@@ -532,6 +532,25 @@ footer > div > a:hover {
   transition: all ease 0.3s;
 }
 
+.footercontent {
+  padding-top: 240px;
+  margin-bottom: 160px;
+}
+
+.footercontent h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footercontent p {
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.footercontent h3 {
+  margin-bottom: 16px;
+}
+
 @media only screen and (max-width: 1320px) {
   .mbhero {
     margin-bottom: 80px;

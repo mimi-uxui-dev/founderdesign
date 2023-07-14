@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 function Success() {
   return (
-    <div>
+    <article>
       <Header />
       <main className="container-main">
         <div>
@@ -21,7 +21,7 @@ function Success() {
         </a>
       </main>
       <Footer />
-    </div>
+    </article>
   );
 }
 
