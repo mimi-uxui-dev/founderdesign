@@ -13,7 +13,7 @@ function Pricing() {
       text: "No minimum commitment. Pause or cancel any time.",
       benefits: ["Everything is Unlimited"],
       linkText: "Start Now",
-      link: "#startnow",
+      link: "https://buy.stripe.com/28o4io9108rJ6ic9AD",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ function Pricing() {
       text: "No minimum commitment. Pause or cancel any time.",
       benefits: ["Everything is Unlimited"],
       linkText: "Start Now",
-      link: "#startnow",
+      link: "https://buy.stripe.com/14k6qwa549vNgWQ6oq",
     },
   ];
 
@@ -109,13 +109,21 @@ function Pricing() {
                 ))}
               </ul>
             </div>
-            <button
+            {/* <button
               className="button"
               type="submit"
-              onClick={() => checkout(d.priceId)}
+              // onClick={() => checkout(d.priceId)}
             >
               {d.linkText} {pending}
-            </button>
+            </button> */}
+            <a
+              href={d.link}
+              className="button"
+              type="submit"
+              // onClick={() => checkout(d.priceId)}
+            >
+              {d.linkText}
+            </a>
           </from>
         ))}
 

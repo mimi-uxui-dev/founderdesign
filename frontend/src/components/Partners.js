@@ -12,7 +12,7 @@ function Partners() {
   const data = [img1, img2, img3, img4, img5, img6, img7];
 
   return (
-    <article id="partners">
+    <article id="partners" className="mt120">
       <div className="container mb200">
         <div className="container-header">
           <div className="abc">

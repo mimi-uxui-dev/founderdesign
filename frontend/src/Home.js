@@ -14,12 +14,12 @@ function Home() {
     <>
       <Header />
       <Hero />
+      <Partners />
       <Workflow />
       <Benefits />
       <Services />
       <SelectedProjects />
       <Pricing />
-      <Partners />
       <Footer />
     </>
   );
