@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="container mb200">
       <div className="footer-top">
         <div>
-          <h6>Contact</h6>
+          <h6> {t("contact")} </h6>
           <a
             href="mailto:team@founderdesign.io"
             target="_blank"

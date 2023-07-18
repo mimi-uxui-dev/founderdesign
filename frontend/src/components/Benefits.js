@@ -6,48 +6,48 @@ import img3 from "../assets/b3.png";
 import img4 from "../assets/b4.png";
 import img5 from "../assets/b5.png";
 import img6 from "../assets/b6.png";
+import { useTranslation } from "react-i18next";
 
 function Benefits() {
+  const { t } = useTranslation();
+
   const data = [
     {
       id: 1,
       imgURL: img1,
-      title: "Infinity Design",
-      content: "Unlock infinite design requests",
+      title: t("b01"),
+      content: t("b1"),
     },
     {
       id: 2,
       imgURL: img2,
-      title: "Fixed monthly price",
-      content: "No surprises! Enjoy a fixed monthly price",
+      title: t("b02"),
+      content: t("b2"),
     },
     {
       id: 3,
       imgURL: img3,
-      title: "Rockstar quality",
-      content:
-        "Unleash remarkable design quality whenever you need it, just a click away.",
+      title: t("b03"),
+      content: t("b3"),
     },
     {
       id: 4,
       imgURL: img4,
-      title: "Flexible",
-      content: "Cancel your subscription at any time",
+      title: t("b04"),
+      content: t("b4"),
     },
 
     {
       id: 5,
       imgURL: img5,
-      title: "Fast delivery",
-      content:
-        "Receive your designs individually, typically within a few days on average",
+      title: t("b05"),
+      content: t("b5"),
     },
     {
       id: 6,
       imgURL: img6,
-      title: "It’s all yours",
-      content:
-        "Every design is uniquely crafted just for you, ensuring that it belongs exclusively to you, with all rights.",
+      title: t("b06"),
+      content: t("b6"),
     },
   ];
 
@@ -56,7 +56,7 @@ function Benefits() {
       <div className="container">
         <div className="container-header">
           <div className="abc">
-            <p className="body20">What we offer</p>
+            <p className="body20"> {t("What We Offer")} </p>
             <img src={smallline} alt="" />
           </div>
           <h1 className="h1">✨ How do you benefit?</h1>
@@ -75,7 +75,7 @@ function Benefits() {
         </div>
 
         <a className="button flexcentercenterbtn" href="#plans">
-          See plans
+          {t("seePlans")}
         </a>
       </div>
     </article>

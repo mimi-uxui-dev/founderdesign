@@ -1,40 +1,12 @@
 import React from "react";
 import smallline from "../assets/small-line.svg";
-import img1 from "../assets/1.png";
-import img2 from "../assets/2.png";
-import img3 from "../assets/3.png";
-import img4 from "../assets/4.png";
+import img1 from "../assets/project/1.png";
+import img2 from "../assets/project/2.png";
+import img3 from "../assets/project/3.png";
+import img4 from "../assets/project/4.png";
 
 function SelectedProjects() {
-  const data = [
-    {
-      id: 1,
-      img: img1,
-      title: "FounderStudio",
-      content:
-        "Landing page VideoPitch App to grow and fundraise with the crowd",
-    },
-    {
-      id: 3,
-      img: img4,
-      title: "FounderStudio App",
-      content: "VideoPitch App to grow and fundraise with the crowd.",
-    },
-    {
-      id: 2,
-      img: img2,
-      title: "LevelHeroes",
-      content:
-        "Building games together We intends to bridge the gap between centralized gaming communities to bring them decentralized assets.",
-    },
-    {
-      id: 3,
-      img: img3,
-      title: "Oniwa",
-      content:
-        "Daily positive activity is key for your mental health. We encourage our clients to learn living in the present and live their fullest",
-    },
-  ];
+  const data = [img1, img2, img3, img4];
 
   return (
     <article id="ourwork" className="container mt200 mb200">
@@ -48,13 +20,7 @@ function SelectedProjects() {
 
       <div className="projects-grid mt120">
         {data.map((d) => (
-          <div key={d.id} className="project-card">
-            <img src={d.img} alt="" />
-            <div className="project-content">
-              <h3>{d.title}</h3>
-              <p>{d.content}</p>
-            </div>
-          </div>
+          <img src={d} alt="" />
         ))}
       </div>
     </article>

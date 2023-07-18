@@ -8,9 +8,12 @@ import img5 from "../assets/005.png";
 import img6 from "../assets/006.png";
 import img7 from "../assets/007.png";
 import img8 from "../assets/008.png";
-import img from "../assets/Frame .png";
+import { useTranslation } from "react-i18next";
+import parse from "html-react-parser";
 
 function Services() {
+  const { t } = useTranslation();
+
   const data = [
     {
       id: 1,
@@ -58,13 +61,10 @@ function Services() {
     <article id="services" className="container mt200 mb200">
       <div className="container-header">
         <div className="abc">
-          <p className="body20">SERVICES</p>
+          <p className="body20"> {t("Services")} </p>
           <img src={smallline} alt="" />
         </div>
-        <h1 className="h1">
-          We offer a wide range
-          <br /> of design services
-        </h1>
+        <h1 className="h1">{parse(t("WorkflowP"))}</h1>
       </div>
 
       <div className="services-content">

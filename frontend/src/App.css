@@ -11,7 +11,8 @@
 }
 
 a:hover,
-button:hover {
+button:hover,
+.lang {
   cursor: pointer;
 }
 
@@ -201,6 +202,12 @@ header {
   margin: auto;
 }
 
+.rightnav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .benefits-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -320,9 +327,15 @@ b {
 }
 
 .projects-grid {
-  display: flex;
-  gap: 80px;
-  flex-direction: column;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects-grid img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .project-card {
@@ -631,7 +644,16 @@ footer > div > a:hover {
   }
 }
 
+.menu,
+.menu-content {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
   .button {
     font-size: 16px;
     line-height: 24px;
@@ -680,6 +702,62 @@ footer > div > a:hover {
     align-items: center;
     gap: 24px;
   }
+
+  /*  */
+  .header .button {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    height: 44px;
+    width: 44px !important;
+  }
+
+  .displayFlex {
+    display: flex;
+  }
+
+  .none,
+  .lang {
+    display: none;
+  }
+
+  .menu-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(205, 225, 232, 0.75);
+    backdrop-filter: blur(4px);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 16px;
+  }
+
+  .menu-content > .lang1 {
+    display: flex !important;
+  }
+
+  .menu-content a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .menu-content span {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--2);
+  }
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -706,63 +784,6 @@ footer > div > a:hover {
   }
 }
 
-.menu,
-.menu-content {
-  display: none;
-}
-
-@media only screen and (max-width: 480px) {
-  .header .button {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    height: 44px;
-    width: 44px !important;
-  }
-
-  .displayFlex {
-    display: flex;
-  }
-
-  .none {
-    display: none;
-  }
-
-  .menu-content {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(205, 225, 232, 0.75);
-    backdrop-filter: blur(4px);
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    gap: 16px;
-  }
-
-  .menu-content a {
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  .menu-content span {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--2);
-  }
-  .header {
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 @media only screen and (max-width: 375px) {
   .header img {
     width: 160px;
@@ -770,7 +791,4 @@ footer > div > a:hover {
   .header {
     gap: 16px;
   }
-}
-
-@media only screen and (max-width: 320px) {
 }

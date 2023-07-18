@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import smallline from "../assets/small-line.svg";
+import { useTranslation } from "react-i18next";
+import parse from "html-react-parser";
 
 function Pricing() {
+  const { t } = useTranslation();
+
   const [pending, setPending] = useState(false);
 
   const data = [
     {
       id: 1,
       priceId: "price_1NFaUBHpzmuCdPXbgh6pgrCY",
-      type: "Weekly",
+      type: t("Weekly"),
       price: "$699",
-      text: "No minimum commitment. Pause or cancel any time.",
-      benefits: ["Everything is Unlimited"],
-      linkText: "Start Now",
+      text: t("WeeklyP"),
+      benefits: [t("WeeklyLi")],
+      linkText: t("Start Now"),
       link: "https://buy.stripe.com/28o4io9108rJ6ic9AD",
     },
     {
       id: 2,
       priceId: "price_1NFaWiHpzmuCdPXbxodKim7O",
-      type: "Monthly",
+      type: t("Monthly"),
       price: "$2,499",
-      text: "No minimum commitment. Pause or cancel any time.",
-      benefits: ["Everything is Unlimited"],
-      linkText: "Start Now",
+      text: t("WeeklyP"),
+      benefits: [t("WeeklyLi")],
+      linkText: t("Start Now"),
       link: "https://buy.stripe.com/14k6qwa549vNgWQ6oq",
     },
   ];
@@ -30,24 +34,23 @@ function Pricing() {
   const data2 = [
     {
       id: 3,
-      type: "Monthly + Equity",
+      type: t("Monthly+Equity"),
       priceId: "",
       price: "$1,499",
-      text: "Lower cash + Equity deal",
-      benefits: ["Let’s discuss a deal"],
+      text: t("Monthly+EquityP"),
+      benefits: [t("Monthly+EquityLi")],
       linkText: "https://calendly.com/founderdesign/15min",
-      link: "Book a Call",
+      link: t("Book a Call"),
     },
     {
       id: 4,
-      type: "NOW",
+      type: t("Now"),
       priceId: "",
-
-      price: "Book a call",
-      text: "Learn more about how we work and how it can help  you",
+      price: t("Book a Call"),
+      text: t("NowP"),
       benefits: [],
       linkText: "https://calendly.com/founderdesign/15min",
-      link: "Book a Call",
+      link: t("Book a Call"),
     },
   ];
 
@@ -83,13 +86,10 @@ function Pricing() {
     <article id="plans" className="container mt200 mb200">
       <div className="container-header">
         <div className="abc">
-          <p className="body20">Plans</p>
+          <p className="body20">{t("Plans")}</p>
           <img src={smallline} alt="" />
         </div>
-        <h1 className="h1">
-          Design subscriptions to
-          <br /> bring your ideas to life
-        </h1>
+        <h1 className="h1">{parse(t("PlansP"))}</h1>
       </div>
       <div className="pricing-grid mt120">
         {data.map((d) => (
