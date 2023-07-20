@@ -8,7 +8,7 @@ import SelectedProjects from "./components/SelectedProjects";
 import Services from "./components/Services";
 import Workflow from "./components/Workflow";
 import Partners from "./components/Partners";
-// import Faqs from "./components/Faqs";
+import Faqs from "./components/Faqs";
 
 function Home() {
   return (
@@ -21,7 +21,7 @@ function Home() {
       <Services />
       <SelectedProjects />
       <Pricing />
-      {/* <Faqs /> */}
+      <Faqs />
       <Footer />
     </>
   );
