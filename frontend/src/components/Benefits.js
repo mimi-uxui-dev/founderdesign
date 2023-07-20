@@ -59,7 +59,7 @@ function Benefits() {
             <p className="body20"> {t("What We Offer")} </p>
             <img src={smallline} alt="" />
           </div>
-          <h1 className="h1">✨ How do you benefit?</h1>
+          <h1 className="h1">✨ {t("How do you benefit?")}</h1>
         </div>
 
         <div className="benefits-content">

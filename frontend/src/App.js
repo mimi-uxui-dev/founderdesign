@@ -8,7 +8,6 @@ import Terms from "./components/policies/Terms";
 import Imprint from "./components/policies/Imprint";
 
 function App() {
-  // just a comment
   return (
     <BrowserRouter>
       <Routes>

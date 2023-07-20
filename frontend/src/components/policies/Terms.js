@@ -411,18 +411,18 @@ function Terms() {
             We only replace items if they are defective or damaged. If you need
             to exchange it for the same item, send us an email at
             returns@skyward64.io and send your item to our service partner:
-            SkyWard64 AG, Erlenstrasse 39, 8832 Wollerau. SHIPPING To return
-            your product, you should send us an email at returns@skyward64.io
-            and send your item to our service partner: SkyWard64 AG,
-            Erlenstrasse 39, 8832 Wollerau. You will be responsible for paying
-            for your own shipping costs for returning your item. Shipping costs
-            are non-refundable. If you receive a refund, the cost of return
-            shipping will be deducted from your refund. Depending on where you
-            live, the time it may take for your exchanged product to reach you,
-            may vary. If you are shipping an item over $75 / CHF 75, you should
-            consider using a trackable shipping service or purchasing shipping
-            insurance. We don't guarantee that we will receive your returned
-            item.
+            FounderDesign.io, Gubelstrasse 15, 6300 Zug, Switzerland. SHIPPING
+            To return your product, you should send us an email at
+            returns@skyward64.io and send your item to our service partner:
+            FounderDesign.io, Gubelstrasse 15, 6300 Zug, Switzerland. You will
+            be responsible for paying for your own shipping costs for returning
+            your item. Shipping costs are non-refundable. If you receive a
+            refund, the cost of return shipping will be deducted from your
+            refund. Depending on where you live, the time it may take for your
+            exchanged product to reach you, may vary. If you are shipping an
+            item over $75 / CHF 75, you should consider using a trackable
+            shipping service or purchasing shipping insurance. We don't
+            guarantee that we will receive your returned item.
           </p>
         </div>
       </main>

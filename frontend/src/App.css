@@ -792,3 +792,44 @@ footer > div > a:hover {
     gap: 16px;
   }
 }
+
+/* accordion */
+
+.szh-accordion {
+  background-color: var(--white);
+}
+
+.szh-accordion * {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.szh-accordion__item {
+  margin-bottom: 24px;
+}
+
+.szh-accordion__item button {
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 16px;
+  background-color: var(--6);
+  border-bottom: 3px solid var(--3);
+}
+
+.szh-accordion__item button::after {
+  content: "+";
+  float: right;
+  font-size: 24px;
+}
+
+.szh-accordion__item--expanded button::after {
+  content: "-";
+}
+
+.szh-accordion__item-content {
+  padding: 16px 40px;
+}
