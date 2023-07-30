@@ -91,6 +91,24 @@ function Pricing() {
         </div>
         <h1 className="h1">{parse(t("PlansP"))}</h1>
       </div>
+      {/* ---------------- */}
+      <div className="freetrial mt120">
+        <div>
+          <h6>1 Day</h6>
+          <h2>$0</h2>
+          <p>Free Trial - Request anything</p>
+        </div>
+
+        <a
+          className="button"
+          target="_blank"
+          href="https://calendly.com/founderdesign/15min"
+          rel="noreferrer"
+        >
+          {t("getInTouch")}
+        </a>
+      </div>
+      {/* ---------------- */}
       <div className="pricing-grid mt120">
         {data.map((d) => (
           <from
