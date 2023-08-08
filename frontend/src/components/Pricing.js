@@ -13,7 +13,7 @@ function Pricing() {
       id: 1,
       priceId: "price_1NFaWiHpzmuCdPXbxodKim7O",
       type: "1 Day Trial",
-      price: "Pay What You Want",
+      price: "Pay What You Want ✨",
       text: "Test our service for one day and request anything",
       benefits: [t("WeeklyLi")],
       linkText: t("Start Now"),
