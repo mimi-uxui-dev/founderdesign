@@ -19,41 +19,49 @@ function Services() {
       id: 1,
       imgURL: img1,
       content: "Websites",
+      duration: "~ 5 Days",
     },
     {
       id: 2,
       imgURL: img2,
       content: "PitchDecks",
+      duration: "~ 3 Days",
     },
     {
       id: 3,
       imgURL: img3,
       content: "Apps",
+      duration: "~ 5 Days",
     },
     {
       id: 4,
       imgURL: img4,
       content: "MVP & Clickable Prototypes",
+      duration: "~ 3 Days",
     },
     {
       id: 5,
       imgURL: img5,
       content: "Logo & CorporateDesigns",
+      duration: "~ 3 Days",
     },
     {
       id: 6,
       imgURL: img6,
       content: "Social Media & AdDesigns",
+      duration: "~ 3 Days",
     },
     {
       id: 7,
       imgURL: img7,
       content: "PrintDesigns",
+      duration: "~ 4 Days",
     },
     {
       id: 8,
       imgURL: img8,
       content: "UI/UX Design for Games",
+      duration: "~ 7 Days",
     },
   ];
 
@@ -71,7 +79,9 @@ function Services() {
         {data.map((d) => (
           <div key={d.id}>
             <img src={d.imgURL} alt="" />
-            <p>{d.content}&nbsp;</p>
+            <p>
+              {d.content} <br /> <b>{d.duration}</b>
+            </p>
           </div>
         ))}
       </div>

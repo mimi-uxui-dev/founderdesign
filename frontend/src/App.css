@@ -367,10 +367,11 @@ b {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 33px;
   padding: 24px 0;
   border-bottom: 1px solid var(--5);
-  width: fit-content;
+  width: 100%;
+  text-align: center;
 }
 
 .projects-grid {

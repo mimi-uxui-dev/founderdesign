@@ -11,6 +11,16 @@ function Pricing() {
   const data = [
     {
       id: 1,
+      priceId: "price_1NFaWiHpzmuCdPXbxodKim7O",
+      type: "1 Day Trial",
+      price: "Pay What You Want",
+      text: "Test our service for one day and request anything",
+      benefits: [t("WeeklyLi")],
+      linkText: t("Start Now"),
+      link: "https://buy.stripe.com/8wM2agdhgfUb0XS7sw",
+    },
+    {
+      id: 1,
       priceId: "price_1NFaUBHpzmuCdPXbgh6pgrCY",
       type: t("Weekly"),
       price: "$699",
@@ -19,6 +29,9 @@ function Pricing() {
       linkText: t("Start Now"),
       link: "https://buy.stripe.com/28o4io9108rJ6ic9AD",
     },
+  ];
+
+  const data2 = [
     {
       id: 2,
       priceId: "price_1NFaWiHpzmuCdPXbxodKim7O",
@@ -26,22 +39,19 @@ function Pricing() {
       price: "$2,499",
       text: t("WeeklyP"),
       benefits: [t("WeeklyLi")],
-      linkText: t("Start Now"),
-      link: "https://buy.stripe.com/14k6qwa549vNgWQ6oq",
+      linkText: "https://buy.stripe.com/14k6qwa549vNgWQ6oq",
+      link: t("Start Now"),
     },
-  ];
-
-  const data2 = [
-    {
-      id: 3,
-      type: t("Monthly+Equity"),
-      priceId: "",
-      price: "$1,499",
-      text: t("Monthly+EquityP"),
-      benefits: [t("Monthly+EquityLi")],
-      linkText: "https://calendly.com/founderdesign/15min",
-      link: t("Book a Call"),
-    },
+    // {
+    //   id: 3,
+    //   type: t("Monthly+Equity"),
+    //   priceId: "",
+    //   price: "$1,499",
+    //   text: t("Monthly+EquityP"),
+    //   benefits: [t("Monthly+EquityLi")],
+    //   linkText: "https://calendly.com/founderdesign/15min",
+    //   link: t("Book a Call"),
+    // },
     {
       id: 4,
       type: t("Now"),
@@ -92,11 +102,11 @@ function Pricing() {
         <h1 className="h1">{parse(t("PlansP"))}</h1>
       </div>
       {/* ---------------- */}
-      <div className="freetrial mt120">
+      {/* <div className="freetrial mt120">
         <div>
-          <h6>1 Day</h6>
-          <h2>$0</h2>
-          <p>Free Trial - Request anything</p>
+          <h6>1 Day Trial</h6>
+          <h2>Pay what you want</h2>
+          <p>Test our service for one day and request anything</p>
         </div>
 
         <a
@@ -105,9 +115,9 @@ function Pricing() {
           href="https://calendly.com/founderdesign/15min"
           rel="noreferrer"
         >
-          {t("getInTouch")}
+          Start Now
         </a>
-      </div>
+      </div> */}
       {/* ---------------- */}
       <div className="pricing-grid mt120">
         {data.map((d) => (
